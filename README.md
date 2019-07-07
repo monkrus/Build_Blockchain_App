@@ -1,7 +1,7 @@
 
 ## This project is based on [Build Your First Blockchain App Using Ethereum Smart Contracts and Solidity  tutorial](https://www.youtube.com/watch?v=coQ5dg8wM2o) ## 
-1. Prerequsites: Installed node, ganache(from truffle), metamask
 ## List of commands to run ##
+1.  Prerequsites: Installed node, ganache(from truffle), metamask
 2. 'npm install -g truffle@5.0.2'
 3. If you are getting a "Keccak bindings compilation fail. Pure JS implementation will be used.", run following:
    `npm install -g truffle --unsafe-perm`

@@ -20,6 +20,10 @@ string content,
 bool completed
 );
 
+event TaskCompleted (
+uint id,
+bool completed
+);
  constructor() public {
  	createTask("Trust your instincts");
  }
@@ -31,46 +35,19 @@ taskCount ++;
 //put taskCount inside the mapping
 tasks[taskCount] = Task(taskCount, _content, false);
 emit TaskCreated (taskCount, _content, false);
+}
 
+function toggleCompleted(uint _id) public {
+    Task memory _task = tasks[_id];
+    _task.completed = !_task.completed;
+    tasks[_id] = _task;
+    emit TaskCompleted(_id, _task.completed);
 	}
 }
 
-	//test
+	
 
 
-
-
-
-// prereq.  node, ganache(from truffle), metamask
-// npm install -g truffle@5.0.2
-// if getting a "Keccak bindings compilation fail. Pure JS implementation will be used."
-// npm install -g truffle --unsafe-perm
-// npm install --global windows-build-tools
-// truffle init ( create truf project)
-// package.json
-// npm init
-// update truffle-config.js
-// truffle compiate 
-// truffle migrate --reset --all if you are getting  an "truffle has not been deployed to detected network" error
-// truffle console (to retrieve the smart contract)
-// type Todo = await Todo.deployed()
-// Todo.address
-// taskCount = await Todo.TaskCount()
-// taskCount.toNumber()
-// CTRL+c to exit, 
-// git init, git add ., git commit "Project Setup"
-// truffle compile
-// truffle migrate --reset
-// truffle console
-// todo = await Todo.deployed()
-// todo.address
-// task = await todo.tasks(1)
-// task
-// task.id
-// task.id.toNumber()
-// task.content
-// npm run dev (starting the server)
-// truffle test
 
 
 

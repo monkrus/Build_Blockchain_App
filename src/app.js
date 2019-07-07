@@ -106,7 +106,7 @@ App = {
       }
 
       // Show the task
-      $newTaskTemplate.show()
+      $newTaskTemplate.show() 
     }
   },
 

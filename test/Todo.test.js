@@ -31,7 +31,7 @@ this.todo = await  Todo.deployed()
     assert.equal(event.content, 'A new task')
     assert.equal(event.completed, false)
   })
-/*
+
   it('toggles task completion', async () => {
     const result = await this.todo.toggleCompleted(1)
     const task = await this.todo.tasks(1)
@@ -39,7 +39,7 @@ this.todo = await  Todo.deployed()
     const event = result.logs[0].args
     assert.equal(event.id.toNumber(), 1)
     assert.equal(event.completed, true)
-  })*/
+  }) 
 
 })
 

@@ -22,8 +22,8 @@ this.todo = await  Todo.deployed()
     assert.equal(taskCount.toNumber(), 1)
   })
 
- /* it('creates tasks', async () => {
-    const result = await this.todoList.createTask('A new task')
+  it('creates tasks', async () => {
+    const result = await this.todo.createTask('A new task')
     const taskCount = await this.todo.taskCount()
     assert.equal(taskCount, 2)
     const event = result.logs[0].args
@@ -31,7 +31,7 @@ this.todo = await  Todo.deployed()
     assert.equal(event.content, 'A new task')
     assert.equal(event.completed, false)
   })
-
+/*
   it('toggles task completion', async () => {
     const result = await this.todo.toggleCompleted(1)
     const task = await this.todo.tasks(1)

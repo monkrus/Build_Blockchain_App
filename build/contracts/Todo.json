@@ -1,0 +1,214 @@
+{
+  "contractName": "Todo",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "taskCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xb6cb58a5"
+    }
+  ],
+  "bytecode": "0x608060405260008055348015601357600080fd5b506099806100226000396000f3fe608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a72305820f52527b1bd8ebde63a81db5786c5cfc539251456e5e231f7fb3ecd5689dc564c0029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663b6cb58a581146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b6000548156fea165627a7a72305820f52527b1bd8ebde63a81db5786c5cfc539251456e5e231f7fb3ecd5689dc564c0029",
+  "sourceMap": "27:137:1:-;;;157:1;133:25;;27:137;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:137:1;;;;;;;",
+  "deployedSourceMap": "27:137:1:-;;;;;;;;;;;;;;;;;;;;;;;133:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;133:25:1;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Todo {\r\n//state variable, written in the blockchain\r\n// public keyword allows to read the value\r\nuint public taskCount = 0;\r\n\r\n}\r\n\r\n\r\n\r\n// prereq.  node, ganache(from truffle), metamask\r\n// npm install -g truffle@5.0.2\r\n// if getting a \"Keccak bindings compilation fail. Pure JS implementation will be used.\"\r\n// npm install -g truffle --unsafe-perm\r\n// npm install --global windows-build-tools\r\n// truffle init ( create truf project)\r\n// package.json\r\n// npm init\r\n// update truffle-config.js\r\n// truffle migrate\r\n",
+  "sourcePath": "C:/Users/sstad/Desktop/Solidity/Projects/todo/contracts/Todo.sol",
+  "ast": {
+    "absolutePath": "/C/Users/sstad/Desktop/Solidity/Projects/todo/contracts/Todo.sol",
+    "exportedSymbols": {
+      "Todo": [
+        62
+      ]
+    },
+    "id": 63,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 62,
+        "linearizedBaseContracts": [
+          62
+        ],
+        "name": "Todo",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "taskCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 62,
+            "src": "133:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "133:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 60,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "157:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 63,
+        "src": "27:137:1"
+      }
+    ],
+    "src": "0:551:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/sstad/Desktop/Solidity/Projects/todo/contracts/Todo.sol",
+    "exportedSymbols": {
+      "Todo": [
+        62
+      ]
+    },
+    "id": 63,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 62,
+        "linearizedBaseContracts": [
+          62
+        ],
+        "name": "Todo",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 61,
+            "name": "taskCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 62,
+            "src": "133:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 59,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "133:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 60,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "157:1:1",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 63,
+        "src": "27:137:1"
+      }
+    ],
+    "src": "0:551:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xf1Fe578469F0925f68D1cD56aC7e4cE4412cF832",
+      "transactionHash": "0x8578d4ba1093cc28215ef6b4e3fc15913dc34ebdb9f5fd6235b9b57ebd73a906"
+    }
+  },
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-07-04T20:38:39.010Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

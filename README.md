@@ -10,26 +10,28 @@
 - Create `package.json`
 - `npm init`
 - Update `truffle-config.js`
-8. `truffle compile` 
-9. If you are getting  a "truffle has not been deployed to detected network" error
-   `truffle migrate` --reset --all 
-10. `truffle console` (to retrieve the smart contract)
-    `Todo = await Todo.deployed()`
-    `Todo.address`
-    `taskCount = await Todo.TaskCount()`
-    `taskCount.toNumber()`
-     `CTRL+C` to exit, 
-11. `git init`, `git add` ., `git commit -m` (choose your message, e.g. "First commit")
-12.  `truffle compile`
-13. truffle migrate --reset
-14. truffle console
-    `todo = await Todo.deployed()`
-    `todo.address`
-    `task = await todo.tasks(1)`
-    `task`
-    `task.id`
-    `task.id.toNumber()`
-    `task.content`
-15. `npm run dev` (starting the lite-server)
-16.  `truffle test`
+- `truffle compile` 
+- If you are getting  a "truffle has not been deployed to detected network" error
+- `truffle migrate` --reset --all 
+- `truffle console` (to retrieve the smart contract)
+- `Todo = await Todo.deployed()`
+- `Todo.address`
+- `taskCount = await Todo.TaskCount()`
+- `taskCount.toNumber()`
+- `CTRL+C` to exit, 
+- `git init`, `git add` ., `git commit -m` (choose your message, e.g. "First commit")
+- `truffle compile`
+- truffle migrate --reset
+- truffle console
+- `todo = await Todo.deployed()`
+- `todo.address`
+- `task = await todo.tasks(1)`
+- `task`
+- `task.id`
+- `task.id.toNumber()`
+- `task.content`
+- `npm run dev` (starting the lite-server)
+- `truffle test`
+
+Enjoy 🌹
 
